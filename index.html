@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, inital-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title>Credit card Vanila</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="index.css" />
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<div
+			class="container border d-flex flex-column align-items-center justify-content-center mt-4"
+		>
+			<div class="card bg-success">
+				<div class="holograma">
+					<img src="holo.png" alt="holograma" />
+				</div>
+				<div class="vid-carta"></div>
+				<div class="nomer-carta">#### #### #### #####</div>
+				<div class="card-holder">
+					<div id="card-holder">Card Holder</div>
+					<div>CardHolderName</div>
+				</div>
+				<div class="expires">
+					<div id="expires">Expires</div>
+					<div>MM/YY</div>
+				</div>
+			</div>
+			<div class="pole bg-secondary">
+				<form action="" class="p-2">
+					<div class="form-group">
+						<label for="number">Card Number</label>
+						<input
+							type="input"
+							class="form-control"
+							placeholder="#### ##### ##### #####"
+							id="card-number"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="name">Card Name</label>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Full Name"
+							id="card-name"
+						/>
+					</div>
+					<div class="row">
+						<div class="col">
+							<label for="month">Expiration Date</label>
+							<select
+								name="month"
+								class="form-control"
+								id="card-month"
+							>
+								<option>Month</option>
+								<option>January</option>
+								<option>Februry</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>Octomber</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</div>
+						<div class="col">
+							<label for="month" class="year">Year</label>
+							<select
+								name="year"
+								class="form-control"
+								id="card-year"
+							>
+								<option>Year</option>
+								<option>2020</option>
+								<option>2021</option>
+								<option>2022</option>
+								<option>2023</option>
+								<option>2024</option>
+								<option>2025</option>
+								<option>2026</option>
+							</select>
+						</div>
+						<div class="col">
+							<label for="cvv">CVV</label>
+							<input
+								type="input"
+								class="form-control ml-5%"
+								id="card-cvv"
+							/>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary ">
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

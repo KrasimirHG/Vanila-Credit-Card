@@ -1,0 +1,65 @@
+.card {
+	width: 350px;
+	height: 200px;
+	z-index: 100;
+	border-radius: 5px;
+	position: relative;
+}
+.pole {
+	width: 450px;
+	height: 400px;
+	z-index: 10;
+	margin-top: -50px;
+	border-radius: 10px;
+	position: relative;
+}
+.pole form {
+	margin-top: 60px;
+}
+.pole button {
+	width: 100%;
+	margin: 5% 0;
+}
+.year {
+	visibility: hidden;
+}
+.holograma {
+	position: absolute;
+	top: 4%;
+	left: 3%;
+	width: 20%;
+	height: 18%;
+	border-radius: 5px;
+}
+.holograma img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+.vid-carta {
+	position: absolute;
+	top: 8%;
+	right: 5%;
+}
+.nomer-carta {
+	position: absolute;
+	bottom: 45%;
+	left: 2%;
+	font-size: 1.5em;
+}
+.card-holder {
+	position: absolute;
+	left: 5%;
+	bottom: 8%;
+}
+#card-holder {
+	font-size: 0.7em;
+}
+.expires {
+	position: absolute;
+	bottom: 8%;
+	right: 5%;
+}
+#expires {
+	font-size: 0.7em;
+}
