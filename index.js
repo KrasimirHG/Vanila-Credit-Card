@@ -9,10 +9,12 @@
 window.onload = function() {
 	const cardName = document.getElementById("card-name");
 	const cardHolder = document.getElementById("card-holder");
+	const cardNumber = document.getElementById("card-number");
+	const nomerCarta = document.querySelector(".nomer-carta");
 
-	const handleChange = function(e) {
+	const handleChangeName = function(e) {
 		cardHolder.innerHTML = e.target.value.toUpperCase();
 	};
 
-	cardName.addEventListener("input", handleChange);
+	cardName.addEventListener("input", handleChangeName);
 };
