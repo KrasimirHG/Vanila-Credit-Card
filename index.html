@@ -18,19 +18,30 @@
 		<div
 			class="container border d-flex flex-column align-items-center justify-content-center mt-4"
 		>
-			<div class="card bg-success">
-				<div class="holograma">
-					<img src="holo.png" alt="holograma" />
-				</div>
-				<div class="vid-carta"></div>
-				<div class="nomer-carta">#### #### #### #####</div>
-				<div class="card-holder">
-					<div id="card-holder-label">Card Holder</div>
-					<div id="card-holder">CardHolderName</div>
-				</div>
-				<div class="expires">
-					<div id="expires">Expires</div>
-					<div>MM/YY</div>
+			<div class="card">
+				<div class="card-inner">
+					<div class="card-front">
+						<div class="holograma">
+							<img src="holo.png" alt="holograma" />
+						</div>
+						<div class="vid-carta"></div>
+						<div class="nomer-carta">#### #### #### #####</div>
+						<div class="card-holder">
+							<div id="card-holder-label">Card Holder</div>
+							<div id="card-holder">CardHolderName</div>
+						</div>
+						<div class="expires">
+							<div id="expires">Expires</div>
+							<div>MM/YY</div>
+						</div>
+					</div>
+					<div class="card-back">
+						<div class="black-length"></div>
+						<div class="cvv">
+							<div class="cvv-label">cvv</div>
+							<div class="cvv-number"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="pole bg-secondary">
@@ -108,6 +119,10 @@
 								type="input"
 								class="form-control ml-5%"
 								id="card-cvv"
+								onfocus="document.querySelector('.card-inner').style =
+							 'transform:rotateY(180deg);'"
+								onblur="document.querySelector('.card-inner').style =
+							 'transform:none;'"
 							/>
 						</div>
 					</div>
