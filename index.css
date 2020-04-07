@@ -30,7 +30,7 @@
 	top: 15%;
 	left: 0px;
 	width: 100%;
-	height: 8%;
+	height: 18%;
 	background-color: black;
 }
 
@@ -38,14 +38,19 @@
 	position: absolute;
 	bottom: 10%;
 	left: 0px;
+	width: 100%;
+	height: 18%;
 }
 .cvv-label {
 	font-size: 0.7em;
+	float: right;
+	margin-right: 5%;
 }
 .cvv-number {
 	width: 100%;
-	height: 8%;
-	background-color: white;
+	height: 2em;
+	background-color: grey;
+	
 }
 .card-front {
 	background: lightblue;
@@ -89,6 +94,18 @@
 	position: absolute;
 	top: 8%;
 	right: 5%;
+	width: 20%;
+	height: 18%;
+	border:2px solid;
+}
+.vid-carta img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: none;
 }
 .nomer-carta {
 	position: absolute;
