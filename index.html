@@ -24,8 +24,15 @@
 						<div class="holograma">
 							<img src="holo.png" alt="holograma" />
 						</div>
-						<div class="vid-carta"></div>
-						<div class="nomer-carta">#### #### #### #####</div>
+						<div id="vid-carta" class="vid-carta">Not Valid
+							<img id="devil" src="devil.jpg" alt="devil">
+							<img id="AE" src="AmericanExpress.png" alt="AE">
+							<img id="visa" src="visa.svg" alt="visa">
+							<img id="mastercard" src="mastercard.png" alt="mastercard">
+							<img id="discover" src="Discover.png" alt="Discover">
+							<img id="DC" src="DinersClub.png" alt="DinersClub">
+						</div>
+						<div class="nomer-carta">#### #### #### ####</div>
 						<div class="card-holder">
 							<div id="card-holder-label">Card Holder</div>
 							<div id="card-holder">CardHolderName</div>
@@ -57,6 +64,8 @@
 							 'border:2px solid;padding: 5px;'"
 							onblur="document.querySelector('.nomer-carta').style =
 							 'border:none;padding: 0;'"
+
+
 						/>
 					</div>
 					<div class="form-group">
@@ -66,7 +75,7 @@
 							class="form-control"
 							placeholder="Full Name"
 							id="card-name"
-							onchange="handleChangeName()"
+							
 							onclick="document.getElementById('card-holder').style =
 							 'border:2px solid;padding: 5px;'"
 							onblur="document.getElementById('card-holder').style = 
