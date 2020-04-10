@@ -1,10 +1,4 @@
-// function handleChange() {
-// 	var cardName = document.getElementById("card-name");
-// 	let cardHolder = document.getElementById("card-holder");
-// 	cardName.value = cardName.value.toUpperCase();
-// 	console.log(cardName.value);
-// 	cardHolder.innerHTML = cardName.value;
-// }
+
 
 window.onload = function() {
 	const cardName = document.getElementById("card-name");
@@ -53,11 +47,5 @@ window.onload = function() {
 	cardNumber.addEventListener("input", handleChangeNumber);
 	cardCVV.addEventListener("input", handleChangeCVV);
 
-	// function numberChecker() {
-	// 	var cardNo = /^(?:3[47][0-9]{13})$/;
-	// 	if(cardNumber.value.match(cardNo)) {
-	// 		document.querySelector(".vid-karta").innerHTML = "AE"
-	// 	}
-	// 	else document.querySelector(".vid-karta").innerHTML = "BBBBB"
-	// }
+	
 };
